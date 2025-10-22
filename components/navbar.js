@@ -11,7 +11,7 @@ class CustomNavbar extends HTMLElement {
           align-items: center;
           box-shadow: 0 2px 4px rgba(0,0,0,0.05);
           position: fixed;
-          width: 100%;
+          width: 96%;
           top: 0;
           z-index: 1000;
         }
@@ -25,12 +25,15 @@ class CustomNavbar extends HTMLElement {
         .logo-icon {
           color: #3b82f6;
           margin-right: 0.5rem;
+          width: 50px;   /* adjust as needed */
+          height: 50px;  /* adjust as needed */
+          vertical-align: middle;
         }
         .desktop-menu {
           display: flex;
           gap: 1.5rem;
           list-style: none;
-          margin: 0;
+          margin: 10;
           padding: 0;
         }
         .mobile-menu-button {
@@ -96,8 +99,7 @@ class CustomNavbar extends HTMLElement {
       </style>
       <nav>
         <a href="/" class="logo">
-          <i data-feather="cpu" class="logo-icon"></i>
-          MechAssist Pro
+          <img src="/assets/logo.png" alt="Logo" class="logo-icon" /> 
         </a>
         
         <ul class="desktop-menu">
