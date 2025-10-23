@@ -82,7 +82,7 @@ class CustomFooter extends HTMLElement {
         <div class="footer-content">
           <div class="footer-logo">
             <i data-feather="cpu"></i>
-            MechAssist Pro
+            Joseph David
           </div>
           
           <div class="footer-links">
@@ -93,14 +93,10 @@ class CustomFooter extends HTMLElement {
           </div>
           
           <div class="social-links">
-            <a href="#" aria-label="LinkedIn"><i data-feather="linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/josephldavid/" aria-label="LinkedIn"><i data-feather="linkedin"></i></a>
             <a href="#" aria-label="Twitter"><i data-feather="twitter"></i></a>
             <a href="#" aria-label="GitHub"><i data-feather="github"></i></a>
             <a href="#" aria-label="Instagram"><i data-feather="instagram"></i></a>
-          </div>
-          
-          <div class="copyright">
-            &copy; ${new Date().getFullYear()} MechAssist Pro. All rights reserved.
           </div>
         </div>
       </footer>
