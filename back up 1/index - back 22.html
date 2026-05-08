@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HVAC Estimator & Takeoff Specialist | Professional Services</title>
+    <meta name="description" content="Commercial HVAC Estimator & Takeoff Specialist with 5+ years experience in residential and commercial projects across Philippines, Singapore, and international markets.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-dark: #1e293b;
+            --primary-blue: #2563eb;
+            --accent-blue: #3b82f6;
+            --light-gray: #f8fafc;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--primary-dark);
+            line-height: 1.6;
+        }
+        
+        .section-padding {
+            padding: 5rem 1.5rem;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            color: #64748b;
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto 3.5rem;
+        }
+        
+        @media (min-width: 768px) {
+            .section-padding {
+                padding: 7rem 3rem;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .section-padding {
+                padding: 9rem 5rem;
+            }
+        }
+        
+        @media (min-width: 1280px) {
+            .section-padding {
+                padding: 11rem 8rem;
+            }
+        }
+        
+        .image-placeholder {
+            background-color: #e2e8f0;
+            background-image: url('data:image/svg+xml,%3Csvg width=\'20\' height=\'20\' viewBox=\'0 0 20 20\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'%2394a3b8\' fill-opacity=\'0.4\' fill-rule=\'evenodd\'%3E%3Ccircle cx=\'3\' cy=\'3\' r=\'3\'/%3E%3Ccircle cx=\'13\' cy=\'13\' r=\'3\'/%3E%3C/g%3E%3C/svg%3E');
+        }
+        
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(37, 99, 235, 0.15);
+        }
+        
+        .project-card {
+            transition: all 0.4s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .process-step {
+            transition: all 0.3s ease;
+        }
+        
+        .process-step:hover {
+            transform: scale(1.02);
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.6s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="#" class="text-2xl font-bold flex items-center gap-2">
+                    <i data-lucide="wind" class="text-blue-600"></i>
+                    <span class="text-gray-900">HVAC<span class="text-blue-600">Estimator</span></span>
+                </a>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors">About</a>
+                    <a href="#services" class="text-gray-600 hover:text-blue-600 transition-colors">Services</a>
+                    <a href="#projects" class="text-gray-600 hover:text-blue-600 transition-colors">Projects</a>
+                    <a href="#tools" class="text-gray-600 hover:text-blue-600 transition-colors">Tools</a>
+                    <a href="#process" class="text-gray-600 hover:text-blue-600 transition-colors">Process</a>
+                    <a href="#contact" class="bg-blue-600 text-white px-5 py-2.5 rounded-lg hover:bg-blue-700 transition-colors">
+                        Contact Me
+                    </a>
+                </div>
+                
+                <button class="md:hidden" id="mobile-menu-btn">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="hidden md:hidden w-full bg-white border-b border-gray-100" id="mobile-menu">
+            <div class="flex flex-col px-6 py-4 space-y-3">
+                <a href="#about" class="text-gray-600 hover:text-blue-600 py-2">About</a>
+                <a href="#services" class="text-gray-600 hover:text-blue-600 py-2">Services</a>
+                <a href="#projects" class="text-gray-600 hover:text-blue-600 py-2">Projects</a>
+                <a href="#tools" class="text-gray-600 hover:text-blue-600 py-2">Tools</a>
+                <a href="#process" class="text-gray-600 hover:text-blue-600 py-2">Process</a>
+                <a href="#contact" class="text-blue-600 font-medium py-2">Contact Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2 text-center md:text-left fade-in">
+                    <div class="inline-block bg-blue-50 text-blue-700 px-4 py-1.5 rounded-full text-sm font-medium mb-6">
+                        <i data-lucide="award" class="inline mr-2 w-4 h-4"></i>
+                        Over 5 Years Experience
+                    </div>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
+                        Precision <span class="text-blue-600">HVAC Estimating</span> & <br class="hidden md:block">Takeoff Solutions
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-8 max-w-xl mx-auto md:mx-0">
+                        Professional HVAC estimator and mechanical takeoff specialist delivering accurate, cost-effective solutions for residential and commercial projects across the Philippines, Singapore, and international markets.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start">
+                        <a href="#projects" class="w-full sm:w-auto cta-button bg-blue-600 text-white px-8 py-3.5 rounded-lg font-medium inline-flex items-center justify-center">
+                            View My Work
+                            <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
+                        </a>
+                        <a href="#contact" class="w-full sm:w-auto cta-button bg-white text-blue-600 border-2 border-blue-600 px-8 py-3.5 rounded-lg font-medium hover:bg-blue-50 inline-flex items-center justify-center">
+                            Get a Quote
+                        </a>
+                    </div>
+                    
+                    <div class="mt-10 flex items-center justify-center md:justify-start gap-8 text-sm text-gray-500">
+                        <div class="flex items-center">
+                            <i data-lucide="map-pin" class="w-4 h-4 mr-2 text-blue-600"></i>
+                            serving PH, SG & Global
+                        </div>
+                        <div class="flex items-center">
+                            <i data-lucide="dollar-sign" class="w-4 h-4 mr-2 text-blue-600"></i>
+                            projects up to $2M+
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2 fade-in">
+                    <div class="relative">
+                        <div class="absolute -top-6 -left-6 w-full h-full border-2 border-blue-100 rounded-2xl"></div>
+                        <div class="absolute -bottom-6 -right-6 w-full h-full border-2 border-blue-100 rounded-2xl"></div>
+                        <img src="http://static.photos/technology/640x360/133" alt="HVAC Systems Installation" class="rounded-2xl shadow-2xl w-full h-auto object-cover">
+                    </div>
+                    
+                    <div class="grid grid-cols-3 gap-6 mt-8">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-blue-600">500+</div>
+                            <div class="text-gray-600 text-sm mt-1">Projects Completed</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-blue-600">5+</div>
+                            <div class="text-gray-600 text-sm mt-1">Years Experience</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-blue-600">98%</div>
+                            <div class="text-gray-600 text-sm mt-1">Client Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Wave divider -->
+        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" class="relative block w-full">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="white"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center fade-in">
+                <h2 class="section-title">Professional Summary</h2>
+                <p class="section-subtitle">
+                    With over 5 years of specialized experience in HVAC estimation and mechanical takeoffs, I deliver precision-driven solutions for projects ranging from small residential installations to five-figure commercial developments across the Philippines, Singapore, and international markets.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
+                <div class="bg-white rounded-2xl p-8 shadow-lg fade-in">
+                    <i data-lucide="briefcase" class="w-12 h-12 text-blue-600 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-4">Experience & Expertise</h3>
+                    <p class="text-gray-600 mb-6">
+                        My career has been dedicated to providing accurate, timely HVAC estimation services for diverse building projects. From residential complexes to commercial high-rises, I bring technical precision and industry knowledge to every project.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-blue-600 mt-1 mr-3"></i>
+                            <span>Residential projects (condos, townhouses, villas)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-blue-600 mt-1 mr-3"></i>
+                            <span>Commercial projects (offices, retail, hotels)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-blue-600 mt-1 mr-3"></i>
+                            <span>International projects (Philippines, Singapore, global clients)</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 shadow-lg fade-in delay-100">
+                    <i data-lucide="target" class="w-12 h-12 text-blue-600 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-4">Core Values</h3>
+                    <p class="text-gray-600 mb-6">
+                        I operate on three fundamental principles that guide every aspect of my work, ensuring clients receive exceptional value and reliability.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex">
+                            <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-4 flex-shrink-0">
+                                <i data-lucide="sliders-vertical" class="w-5 h-5 text-blue-700"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Precision & Accuracy</h4>
+                                <p class="text-gray-600 text-sm">Meticulous attention to detail ensures error-free estimations</p>
+                            </div>
+                        </li>
+                        <li class="flex">
+                            <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-4 flex-shrink-0">
+                                <i data-lucide="clock" class="w-5 h-5 text-blue-700"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Timely Delivery</h4>
+                                <p class="text-gray-600 text-sm">Consistent deadlines met without compromising quality</p>
+                            </div>
+                        </li>
+                        <li class="flex">
+                            <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-4 flex-shrink-0">
+                                <i data-lucide="dollar-sign" class="w-5 h-5 text-blue-700"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Cost Efficiency</h4>
+                                <p class="text-gray-600 text-sm">Strategic optimization to reduce project costs without sacrificing quality</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-20 fade-in">
+                <h2 class="section-title">Specialized Services</h2>
+                <p class="section-subtitle">
+                    Comprehensive HVAC estimation and takeoff solutions designed to meet the unique needs of residential and commercial projects
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+                <div class="bg-white border border-gray-100 rounded-2xl p-8 text-center shadow-lg hover:shadow-xl transition-all duration-300 project-card">
+                    <div class="w-16 h-16 mx-auto bg-blue-50 rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="rip" class="w-8 h-8 text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">HVAC Estimating</h3>
+                    <p class="text-gray-600 text-sm">
+                        Detailed system analysis and cost estimation for ventilation, heating, and air conditioning systems across all project types
+                    </p>
+                </div>
+                
+                <div class="bg-white border border-gray-100 rounded-2xl p-8 text-center shadow-lg hover:shadow-xl transition-all duration-300 project-card">
+                    <div class="w-16 h-16 mx-auto bg-blue-50 rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="layers" class="w-8 h-8 text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Quantity Takeoffs</h3>
+                    <p class="text-gray-600 text-sm">
+                        Precise material and equipment quantity calculations from construction drawings, specifications, and plans
+                    </p>
+                </div>
+                
+                <div class="bg-white border border-gray-100 rounded-2xl p-8 text-center shadow-lg hover:shadow-xl transition-all duration-300 project-card">
+                    <div class="w-16 h-16 mx-auto bg-blue-50 rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="calculator" class="w-8 h-8 text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Cost Analysis</h3>
+                    <p class="text-gray-600 text-sm">
+                        Comprehensive budget evaluation and optimization recommendations to align project costs with financial goals
+                    </p>
+                </div>
+                
+                <div class="bg-white border border-gray-100 rounded-2xl p-8 text-center shadow-lg hover:shadow-xl transition-all duration-300 project-card">
+                    <div class="w-16 h-16 mx-auto bg-blue-50 rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="file-text" class="w-8 h-8 text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Plan Review</h3>
+                    <p class="text-gray-600 text-sm">
+                        Detailed examination of architectural and engineering drawings to identify HVAC requirements and potential issues
+                    </p>
+                </div>
+            </div>
+            
+            <div class="mt-16 max-w-5xl mx-auto">
+                <div class="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-3xl p-8 md:p-12 text-center text-white shadow-xl">
+                    <i data-lucide="award" class="w-16 h-16 mx-auto mb-6"></i>
+                    <h3 class="text-2xl md:text-3xl font-bold mb-4">Why Choose Me?</h3>
+                    <p class="text-blue-100 mb-8 max-w-2xl mx-auto">
+                        With extensive experience across diverse project scales and types, I provide accurate, reliable HVAC estimation services that help builders and contractors win more projects while maintaining healthy profit margins.
+                    </p>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                        <div>
+                            <div class="text-3xl font-bold mb-1">5+</div>
+                            <div class="text-blue-200 text-sm">Years Experience</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold mb-1">500+</div>
+                            <div class="text-blue-200 text-sm">Projects</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold mb-1">$2M+</div>
+                            <div class="text-blue-200 text-sm">Project Value</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold mb-1">100%</div>
+                            <div class="text-blue-200 text-sm">Accuracy</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bg-gray-900 text-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-4xl font-bold text-blue-400 mb-2">$2M+</div>
+                    <div class="text-gray-300">Total Project Value Handled</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-blue-400 mb-2">500+</div>
+                    <div class="text-gray-300">Projects Completed</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-blue-400 mb-2">150+</div>
+                    <div class="text-gray-300">Commercial Projects</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-blue-400 mb-2">15+</div>
+                    <div class="text-gray-300">Residential Projects</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-20 fade-in">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">
+                    A selection of residential and commercial projects demonstrating my expertise across diverse building types and scales
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 project-card">
+                    <div class="relative h-64">
+                        <img src="http://static.photos/office/640x360/45" alt="Commercial Building Project" class="w-full h-full object-cover">
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-sm font-medium text-blue-700">
+                            Commercial • $1,850,000
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">O persisted Shopping Complex</h3>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Full HVAC estimation and takeoff for a 15-story commercial complex in Makati with advanced ventilation systems and energy-efficient solutions.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 rounded-full text-xs bg-blue-50 text-blue-700">Estimating</span>
+                            <span class="px-3 py-1 rounded-full text-xs bg-blue-50 text-blue-700">Takeoff</span>
+                            <span class="px-3 py-1 rounded-full text-xs bg-blue-50 text-blue-700">Cost Analysis</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 project-card">
+                    <div class="relative h-64">
+                        <img src="http://static.photos/nature/640x360/78" alt="Residential Project" class="w-full h-full object-cover">
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-sm font-medium text-blue-700">
+                            Residential • $320,000
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Laguna Premium Villas</h3>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Complete HVAC estimation for 42 luxury townhouses with custom zoning systems and energy-efficient installations.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 rounded-full text-xs bg-blue-50 text-blue-700">Estimating</span>
+                            <span class="px-3 py-1 rounded-full text-xs bg-blue-50 text-blue-700">Takeoff</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 project-card">
+                    <div class="relative h-64">
+                        <img src="http://static.photos/medical/640x360/102" alt="Hospital Project" class="w-full h-full object-cover">
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-sm font-medium text-blue-700">
+                            Commercial • $2,100,000
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Manila Central Hospital Annex</h3>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Critical HVAC systems estimation for hospital expansion including specialized HVAC with HEPA filtration and嚴格 air quality controls.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 rounded-full text-xs bg-blue-50 text-blue-700">Estimating</span>
+                            <span class="px-3 py-1 rounded-full text-xs bg-blue-50 text-blue-700">Takeoff</span>
+                            <span class="px-3 py-1 rounded-full text-xs bg-blue-50 text-blue-700">Plan Review</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 project-card">
+                    <div class="relative h-64">
+                        <img src="http://static.photos/industrial/640x360/22" alt="Industrial Project" class="w-full h-full object-cover">
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-sm font-medium text-blue-700">
+                            Commercial • $1,250,000
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Cebu Logistics Hub</h3>
+                        <p class="text-gray-600 text-sm mb-4">
+                            HVAC systems estimation for a 50,000 sqm distribution center with specialized humidity control and energy management systems.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 rounded-full text-xs bg-blue-50 text-blue-700">Estimating</span>
+                            <span class="px-3 py-1 rounded-full text-xs bg-blue-50 text-blue-700">Takeoff</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 project-card">
+                    <div class="relative h-64">
+                        <img src="http://static.photos/sport/640x360/156" alt="Sports Facility" class="w-full h-full object-cover">
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-sm font-medium text-blue-700">
+                            Commercial • $980,000
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Davao Municipal Sports Complex</h3>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Comprehensive HVAC estimation for multi-purpose indoor arena with specialized ventilation systems for athlete comfort.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 rounded-full text-xs bg-blue-50 text-blue-700">Estimating</span>
+                            <span class="px-3 py-1 rounded-full text-xs bg-blue-50 text-blue-700">Takeoff</span>
+                            <span class="px-3 py-1 rounded-full text-xs bg-blue-50 text-blue-700">Budgeting</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 project-card">
+                    <div class="relative h-64">
+                        <img src="http://static.photos/retail/640x360/67" alt="Retail Project" class="w-full h-full object-cover">
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-sm font-medium text-blue-700">
+                            Commercial • $720,000
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Quezon City Retail Park</h3>
+                        <p class="text-gray-600 text-sm mb-4">
+                            HVAC estimation for premium retail complex with specialized systems for high-traffic areas and HVAC optimization for energy efficiency.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 rounded-full text-xs bg-blue-50 text-blue-700">Estimating</span>
+                            <span class="px-3 py-1 rounded-full text-xs bg-blue-50 text-blue-700">Takeoff</span>
+                            <span class="px-3 py-1 rounded-full text-xs bg-blue-50 text-blue-700">Plan Review</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#contact" class="btn bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors inline-flex items-center">
+                    Discuss Your Project
+                    <i data-lucide="send" class="ml-2 w-4 h-4"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="tools" class="bg-white py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 fade-in">
+                <h2 class="section-title">Technical Tools & Software</h2>
+                <p class="section-subtitle">
+                    Proficiency in industry-leading software ensures accuracy, efficiency, and seamless collaboration on all projects
+                </p>
+            </div>
+            
+            <div class="max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="text-center p-6 rounded-2xl bg-blue-50/50 border border-blue-100">
+                        <div class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center mb-4 shadow-sm">
+                            <i data-lucide="smartphone" class="w-8 h-8 text-blue-600"></i>
+                        </div>
+                        <h3 class="text-lg font-bold mb-3">PlanSwift</h3>
+                        <p class="text-gray-600 text-sm mb-4">Advanced takeoff and estimation capabilities</p>
+                        <div class="flex justify-center gap-2 text-xs text-gray-500">
+                            <span class="px-2 py-1 bg-white/80 rounded">Residential</span>
+                            <span class="px-2 py-1 bg-white/80 rounded">Commercial</span>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center p-6 rounded-2xl bg-blue-50/50 border border-blue-100">
+                        <div class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center mb-4 shadow-sm">
+                            <i data-lucide="pen-tool" class="w-8 h-8 text-blue-600"></i>
+                        </div>
+                        <h3 class="text-lg font-bold mb-3">Bluebeam</h3>
+                        <p class="text-gray-600 text-sm mb-4">PDF markup and estimation precision tools</p>
+                        <div class="flex justify-center gap-2 text-xs text-gray-500">
+                            <span class="px-2 py-1 bg-white/80 rounded">Plan Review</span>
+                            <span class="px-2 py-1 bg-white/80 rounded">Measurements</span>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center p-6 rounded-2xl bg-blue-50/50 border border-blue-100">
+                        <div class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center mb-4 shadow-sm">
+                            <i data-lucide="layers" class="w-8 h-8 text-blue-600"></i>
+                        </div>
+                        <h3 class="text-lg font-bold mb-3">FastDUCT / FastPIPE</h3>
+                        <p class="text-gray-600 text-sm mb-4">Specialized duct and piping estimation software</p>
+                        <div class="flex justify-center gap-2 text-xs text-gray-500">
+                            <span class="px-2 py-1 bg-white/80 rounded">Ductwork</span>
+                            <span class="px-2 py-1 bg-white/80 rounded">Piping</span>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center p-6 rounded-2xl bg-blue-50/50 border border-blue-100">
+                        <div class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center mb-4 shadow-sm">
+                            <i data-lucide="box" class="w-8 h-8 text-blue-600"></i>
+                        </div>
+                        <h3 class="text-lg font-bold mb-3">AutoCAD</h3>
+                        <p class="text-gray-600 text-sm mb-4">Detailed plan analysis and technical drawing review</p>
+                        <div class="flex justify-center gap-2 text-xs text-gray-500">
+                            <span class="px-2 py-1 bg-white/80 rounded">Drawing Review</span>
+                            <span class="px-2 py-1 bg-white/80 rounded">DXF Files</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-12 bg-gray-900 rounded-3xl p-8 md:p-12 text-center text-white">
+                    <div class="max-w-3xl mx-auto">
+                        <h3 class="text-2xl md:text-3xl font-bold mb-6">Ready to optimize your HVAC estimating process?</h3>
+                        <p class="text-gray-400 mb-8">
+                            With expertise in these industry-standard tools, I can deliver precise estimates and takeoffs that integrate seamlessly with your existing workflows.
+                        </p>
+                        <a href="#contact" class="inline-flex items-center bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-lg font-medium transition-all">
+                            Get Started Today
+                            <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="bg-gray-50 py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 fade-in">
+                <h2 class="section-title">My Process</h2>
+                <p class="section-subtitle">
+                    A proven, efficient workflow ensuring accurate, timely delivery of HVAC estimation services
+                </p>
+            </div>
+            
+            <div class="max-w-5xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6 relative">
+                    <!-- Connecting line -->
+                    <div class="hidden md:block absolute top-12 left-0 w-full h-0.5 bg-gray-300 z-0"></div>
+                    
+                    <div class="bg-white p-8 rounded-2xl shadow-lg relative z-10 process-step">
+                        <div class="w-14 h-14 bg-blue-600 text-white rounded-xl flex items-center justify-center text-xl font-bold mb-4 mx-auto">1</div>
+                        <h3 class="text-lg font-bold text-center mb-3">Plan Review</h3>
+                        <p class="text-gray-600 text-sm text-center">
+                            Thorough examination of architectural, mechanical, and engineering drawings to understand project requirements
+                        </p>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-2xl shadow-lg relative z-10 process-step">
+                        <div class="w-14 h-14 bg-blue-600 text-white rounded-xl flex items-center justify-center text-xl font-bold mb-4 mx-auto">2</div>
+                        <h3 class="text-lg font-bold text-center mb-3">Detailed Takeoff</h3>
+                        <p class="text-gray-600 text-sm text-center">
+                            Precise measurement and calculation of all HVAC components using advanced software like PlanSwift and Bluebeam
+                        </p>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-2xl shadow-lg relative z-10 process-step">
+                        <div class="w-14 h-14 bg-blue-600 text-white rounded-xl flex items-center justify-center text-xl font-bold mb-4 mx-auto">3</div>
+                        <h3 class="text-lg font-bold text-center mb-3">Cost Estimation</h3>
+                        <p class="text-gray-600 text-sm text-center">
+                            Detailed pricing analysis including materials, equipment, labor, and installation costs with value optimization
+                        </p>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-2xl shadow-lg relative z-10 process-step">
+                        <div class="w-14 h-14 bg-blue-600 text-white rounded-xl flex items-center justify-center text-xl font-bold mb-4 mx-auto">4</div>
+                        <h3 class="text-lg font-bold text-center mb-3">Final Delivery</h3>
+                        <p class="text-gray-600 text-sm text-center">
+                            Comprehensive report delivery with detailed breakdowns,BOQ, and ongoing support for bid preparation
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="mt-12 bg-blue-700 rounded-3xl p-8 md:p-12 text-white text-center">
+                    <div class="max-w-2xl mx-auto">
+                        <i data-lucide="file-text" class="w-16 h-16 mx-auto mb-6 text-blue-300"></i>
+                        <h3 class="text-2xl md:text-3xl font-bold mb-4">Quality Assurance Commitment</h3>
+                        <p class="text-blue-100 mb-8">
+                            Every estimate undergoes a rigorous quality control process to ensure accuracy, completeness, and compliance with industry standards.
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+                            <div class="flex items-start">
+                                <i data-lucide="check" class="w-5 h-5 text-blue-300 mt-1 mr-3 flex-shrink-0"></i>
+                                <span class="text-blue-50 text-sm">Double-check calculations</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i data-lucide="check" class="w-5 h-5 text-blue-300 mt-1 mr-3 flex-shrink-0"></i>
+                                <span class="text-blue-50 text-sm">Cross-reference specifications</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i data-lucide="check" class="w-5 h-5 text-blue-300 mt-1 mr-3 flex-shrink-0"></i>
+                                <span class="text-blue-50 text-sm">Comprehensive documentation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="bg-white py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 fade-in">
+                <h2 class="section-title">Client Success Stories</h2>
+                <p class="section-subtitle">
+                    Real feedback from construction partners and clients I've collaborated with
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                <div class="bg-gray-50 rounded-2xl p-8 relative">
+                    <div class="absolute top-6 right-8 text-gray-200">
+                        <i data-lucide="quote" class="w-8 h-8"></i>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400 text-sm">★★★★★</div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Working with this estimator transformed our bidding process. Their accuracy on a $1.8M commercial project helped us secure the contract with competitive pricing."</p>
+                    <div>
+                        <h4 class="font-bold text-gray-900">Mark Tanaka</h4>
+                        <p class="text-blue-600 text-sm">Project Manager, Cebu Construction Co.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 rounded-2xl p-8 relative">
+                    <div class="absolute top-6 right-8 text-gray-200">
+                        <i data-lucide="quote" class="w-8 h-8"></i>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400 text-sm">★★★★★</div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Excellent communication and precision. The HVAC takeoff for our 42-townhouse project was delivered ahead of schedule with minimal revisions needed."</p>
+                    <div>
+                        <h4 class="font-bold text-gray-900">Sarah Lhotel</h4>
+                        <p class="text-blue-600 text-sm">Director, Laguna Luxury Villas</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 rounded-2xl p-8 relative">
+                    <div class="absolute top-6 right-8 text-gray-200">
+                        <i data-lucide="quote" class="w-8 h-8"></i>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400 text-sm">★★★★★</div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Professional, responsive, and incredibly accurate. Their cost analysis for our Singapore hospital expansion saved us an estimated 8% in HVAC costs."</p>
+                    <div>
+                        <h4 class="font-bold text-gray-900">Dr. James Anderson</h4>
+                        <p class="text-blue-600 text-sm">Facility Director, Singapore Medical Center</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-900 text-white py-20">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                <div class="fade-in">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Let's Discuss Your Project</h2>
+                    <p class="text-gray-300 mb-8">
+                        Ready to find the right HVAC solutions for your project? I'm here to help you achieve accuracy, efficiency, and cost savings. Reach out to schedule a free consultation.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center flex-shrink-0 mr-4">
+                                <i data-lucide="email" class="w-6 h-6 text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold mb-1">Email</h3>
+                                <a href="mailto:hello@hvacerimator.com" class="text-blue-400 hover:text-blue-300">hello@hvacerimator.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center flex-shrink-0 mr-4">
+                                <i data-lucide="smartphone" class="w-6 h-6 text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold mb-1">WhatsApp</h3>
+                                <a href="https://wa.me/639123456789" target="_blank" class="text-blue-400 hover:text-blue-300">+63 912 345 6789</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center flex-shrink-0 mr-4">
+                                <i data-lucide="map-pin" class="w-6 h-6 text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold mb-1">Service Areas</h3>
+                                <p class="text-gray-300">Philippines, Singapore, and international clients</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-10">
+                        <h3 class="text-xl font-semibold mb-4">Follow Me</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-blue-600 transition-colors">
+                                <i data-lucide="linkedin" class="w-5 h-5"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-blue-600 transition-colors">
+                                <i data-lucide="facebook" class="w-5 h-5"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-blue-600 transition-colors">
+                                <i data-lucide="instagram" class="w-5 h-5"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 text-gray-900 fade-in delay-100">
+                    <h3 class="text-2xl font-bold mb-6">Send a Message</h3>
+                    
+                    <form id="contactForm" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                            <input type="text" id="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors" placeholder="Your name">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                            <input type="email" id="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors" placeholder="your.email@example.com">
+                        </div>
+                        
+                        <div>
+                            <label for="service" class="block text-sm font-medium text-gray-700 mb-2">Service Needed</label>
+                            <select id="service" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors">
+                                <option value="">Select a service</option>
+                                <option value="estimating">HVAC Estimating</option>
+                                <option value="takeoff">Quantity Takeoffs</option>
+                                <option value="analysis">Cost Analysis</option>
+                                <option value="review">Plan Review</option>
+                                <option value="consultation">Consultation</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="project-details" class="block text-sm font-medium text-gray-700 mb-2">Project Details</label>
+                            <textarea id="project-details" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors" placeholder="Tell me about your project..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-blue-600 text-white py-4 rounded-lg font-medium hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl flex items-center justify-center">
+                            Send Message
+                            <i data-lucide="send" class="ml-2 w-5 h-5"></i>
+                        </button>
+                    </form>
+                    
+                    <div id="form-message" class="hidden mt-4 p-4 rounded-lg bg-green-100 text-green-700 text-center">
+                        <i data-lucide="check-circle" class="w-6 h-6 mx-auto mb-2"></i>
+                        <p>Thank you for contacting me! I'll get back to you within 24 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12 border-t border-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-6 md:mb-0">
+                    <i data-lucide="wind" class="w-8 h-8 text-blue-600 mr-2"></i>
+                    <span class="text-2xl font-bold text-white">HVAC<span class="text-blue-600">Estimator</span></span>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="#about" class="hover:text-white transition-colors">About</a>
+                    <a href="#services" class="hover:text-white transition-colors">Services</a>
+                    <a href="#projects" class="hover:text-white transition-colors">Projects</a>
+                    <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p>&copy; <span id="year"></span> HVAC Estimator & Takeoff Specialist. All rights reserved.</p>
+                <p class="text-sm text-gray-500 mt-2">Serving construction professionals across the Philippines, Singapore, and international markets.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                mobileMenu.classList.add('hidden');
+                
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Form handling
+        const contactForm = document.getElementById('contactForm');
+        const formMessage = document.getElementById('form-message');
+        
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                // Show success message
+                formMessage.classList.remove('hidden');
+                contactForm.reset();
+                
+                // Hide success message after 5 seconds
+                setTimeout(() => {
+                    formMessage.classList.add('hidden');
+                }, 5000);
+            });
+        }
+        
+        // Initialize Lucide icons
+        lucide.createIcons();
+        
+        // Animated scroll detection
+        const observerOptions = {
+            threshold: 0.1
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+        
+        // Observe all fade-in elements
+        document.querySelectorAll('.fade-in').forEach(element => {
+            element.classList.remove('fade-in');
+            observer.observe(element);
+        });
+    </script>
+</body>
+</html>
+
+https://www.figma.com/community/file/1598993437074680027/gds-engineering

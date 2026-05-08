@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CVA|Mech Engr</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-inter bg-gray-50 text-gray-800">
+    <custom-navbar></custom-navbar>
+    
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <!-- Hero Section -->
+        <section id="hero" class="relative overflow-hidden rounded-xl shadow-lg mb-16">
+            <div id="vanta-bg" class="absolute inset-0 z-0"></div>
+            <div class="relative z-10 py-20 px-8 bg-gradient-to-r from-gray-900/70 to-gray-500/70 flex flex-col items-center text-center">
+                <div class="w-32 h-32 rounded-full border-4 border-white/80 overflow-hidden mb-6 shadow-lg">
+                    <a href="#about">
+                        <img src="/assets/profile.jpg" alt="Profile" class="w-full h-full object-cover">
+                    </a>
+                </div>
+                <h1 class="text-4xl font-bold text-white mb-2">Joseph David</h1>
+                <h3 class="text-2xl font-bold text-white mb-2">Mechanical Engineer</h3>
+                <p class="text-xl text-gray-300 mb-6">Specializing in Remote Construction Professional</p>
+                <div class="flex space-x-4">
+                    <a href="#contact" class="px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition">Contact Me</a>
+   
+                    <!-- <a href="#projects" class="px-6 py-2 bg-white/10 hover:bg-white/20 text-white font-medium rounded-lg border border-white/30 transition">My Projects</a> -->
+                 <a href="#projects" class="px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition">My Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="mb-16">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="p-8">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center">
+                        <i data-feather="user" class="mr-2"></i> About Me
+                    </h2>
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="md:col-span-2">
+                            <p class="text-gray-600 mb-6 leading-relaxed">
+                                As a mechanical engineer with a passion for construction technology, I bridge the gap between engineering and digital solutions. My expertise spans CAD design, project management, and virtual assistance tailored for the construction industry.
+                            </p>
+                            <p class="text-gray-600 mb-6 leading-relaxed">
+                                I'm currently transitioning into construction virtual assistance, combining my technical background with digital workflow optimization to help construction firms streamline their operations and improve efficiency.
+                            </p>
+                            <div class="flex flex-wrap gap-4">
+                                <div class="flex items-center bg-blue-50 rounded-full px-4 py-2">
+                                    <i data-feather="clipboard" class="text-blue-600 mr-2 w-4 h-4"></i>
+                                    <span class="text-sm font-medium text-blue-800">Project Management</span>
+                                </div>
+                                <div class="flex items-center bg-blue-50 rounded-full px-4 py-2">
+                                    <i data-feather="cloud" class="text-blue-600 mr-2 w-4 h-4"></i>
+                                    <span class="text-sm font-medium text-blue-800">Virtual Assistance</span>
+                                </div>
+                                <div class="flex items-center bg-blue-50 rounded-full px-4 py-2">
+                                    <i data-feather="calendar" class="text-blue-600 mr-2 w-4 h-4"></i>
+                                    <span class="text-sm font-medium text-blue-800">Scheduling</span>
+                                </div>
+                                <div class="flex items-center bg-blue-50 rounded-full px-4 py-2">
+                                    <i data-feather="book-open" class="text-blue-600 mr-2 w-4 h-4"></i>
+                                    <span class="text-sm font-medium text-blue-800">Estimating and takeoffs</span>
+                                </div>
+                                <div class="flex items-center bg-blue-50 rounded-full px-4 py-2">
+                                    <i data-feather="file-text" class="text-blue-600 mr-2 w-4 h-4"></i>
+                                    <span class="text-sm font-medium text-blue-800">Documentation</span>
+                                </div>
+                                <div class="flex items-center bg-blue-50 rounded-full px-4 py-2">
+                                    <i data-feather="dollar-sign" class="text-blue-600 mr-2 w-4 h-4"></i>
+                                    <span class="text-sm font-medium text-blue-800">Payment Tracking</span>
+                                </div>
+                                <div class="flex items-center bg-blue-50 rounded-full px-4 py-2">
+                                    <i data-feather="monitor" class="text-blue-600 mr-2 w-4 h-4"></i>
+                                    <span class="text-sm font-medium text-blue-800">Progress Report</span>
+                                </div>
+                                <div class="flex items-center bg-blue-50 rounded-full px-4 py-2">
+                                    <i data-feather="layers" class="text-blue-600 mr-2 w-4 h-4"></i>
+                                    <span class="text-sm font-medium text-blue-800">Planswift</span>
+                                </div>
+                                <div class="flex items-center bg-blue-50 rounded-full px-4 py-2">
+                                    <i data-feather="cloud" class="text-blue-600 mr-2 w-4 h-4"></i>
+                                    <span class="text-sm font-medium text-blue-800">Contrator Foreman</span>
+                                </div>
+                                <div class="flex items-center bg-blue-50 rounded-full px-4 py-2">
+                                    <i data-feather="edit" class="text-blue-600 mr-2 w-4 h-4"></i>
+                                    <span class="text-sm font-medium text-blue-800">Instagantt</span>
+                                </div>
+                                <div class="flex items-center bg-blue-50 rounded-full px-4 py-2">
+                                    <i data-feather="calendar" class="text-blue-600 mr-2 w-4 h-4"></i>
+                                    <span class="text-sm font-medium text-blue-800">Project Libre</span>
+                                </div>
+                                <div class="flex items-center bg-blue-50 rounded-full px-4 py-2">
+                                    <i data-feather="mouse-pointer" class="text-blue-600 mr-2 w-4 h-4"></i>
+                                    <span class="text-sm font-medium text-blue-800">AutoCAD</span>
+                                </div>
+                                <div class="flex items-center bg-blue-50 rounded-full px-4 py-2">
+                                    <i data-feather="file-text" class="text-blue-600 mr-2 w-4 h-4"></i>
+                                    <span class="text-sm font-medium text-blue-800">MS Office</span>
+                                </div>
+                                <div class="flex items-center bg-blue-50 rounded-full px-4 py-2">
+                                    <i data-feather="slack" class="text-blue-600 mr-2 w-4 h-4"></i>
+                                    <span class="text-sm font-medium text-blue-800">Slack</span>
+                                </div>
+                                <div class="flex items-center bg-blue-50 rounded-full px-4 py-2">
+                                    <i data-feather="box" class="text-blue-600 mr-2 w-4 h-4"></i>
+                                    <span class="text-sm font-medium text-blue-800">DropBox</span>
+                                </div>
+                                <div class="flex items-center bg-blue-50 rounded-full px-4 py-2">
+                                    <i data-feather="dollar-sign" class="text-blue-600 mr-2 w-4 h-4"></i>
+                                    <span class="text-sm font-medium text-blue-800">XERO</span>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                        <div class="space-y-6">
+                            <div class="bg-gray-50 p-6 rounded-lg">
+                                <h3 class="font-medium text-gray-900 mb-3">Education</h3>
+                                <div class="space-y-4">
+                                    <div>
+                                        <h4 class="text-sm font-semibold text-gray-800">B.S. Mechanical Engineering</h4>
+                                        <p class="text-xs text-gray-500">Holy Angel University</p>
+                                        <p class="text-xs text-gray-500">2009-2015</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-gray-50 p-6 rounded-lg">
+                                <h3 class="font-medium text-gray-900 mb-3">Certifications</h3>
+                                <div class="space-y-4">
+                                    <div>
+                                        <h4 class="text-sm font-semibold text-gray-800">Licensed Mechanical Engineer</h4>
+                                        <p class="text-xs text-gray-500">Professional Regulation Commission</p>
+                                        <p class="text-xs text-gray-500">2015</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-sm font-semibold text-gray-800">Construction Virtual Assistant (CVA) Training</h4>
+                                        <p class="text-xs text-gray-500">Remote Construction Powerhouse Training Hub!</p>
+                                        <p class="text-xs text-gray-500">2025</p>
+                                    </div>
+                                    <div>
+                                        <a target="#" href="/certificates/DAVID CERTIFICATES.pdf" class="px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition">Certificates</a>
+                                    </div>
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8 flex items-center">
+                <i data-feather="grid" class="mr-2"></i> Projects
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Project 0 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition-transform hover:scale-[1.02]">
+                    <div class="h-48 overflow-hidden">
+                        <img src="/assets/projects/schedulers.png" alt="Project 2" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Project Schedule</h3>
+                        <p class="text-gray-600 mb-4">
+                            Prepared a detailed Gantt chart for a 2-car garage ADU conversion project
+                            to plan and track construction activities efficiently.
+                        </p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i data-feather="calendar" class="mr-1 w-4 h-4"></i>
+                            <span>September 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Project 1 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition-transform hover:scale-[1.02]">
+                    <div class="h-48 overflow-hidden">
+                        <img src="/assets/projects/DCLU.jpg" width="640" height="360" alt="Project 1" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Cable Landing Station for a TELCO</h3>
+                        <p class="text-gray-600 mb-4">Supply and installation of Precision Airconditioning Units, DC Rectifier, Data Racks, 
+                            and Data Center Infrastructure Management (DCIM) system to support the mission-critical operations of a telecommunications facility.</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i data-feather="calendar" class="mr-1 w-4 h-4"></i>
+                            <span>March 2025 - On-Going</span>
+                        </div>
+                        <!-- <div class="absolute inset-0 bg-black/40 opacity-0 hover:opacity-100 flex items-center justify-center transition">
+                            <button command="show-modal" commandfor="dialog" class="rounded-md bg-blue-10 px-2.5 py-1.5 text-sm font-semibold text-white inset-ring inset-ring-white/5 hover:bg-white/20">View Details</button>
+                        </div> -->
+                    </div>
+                </div>
+                
+
+                    <!-- <dialog id="dialog" aria-labelledby="dialog-title" class="fixed inset-0 size-auto max-h-none max-w-none overflow-y-auto bg-transparent backdrop:bg-transparent">
+                        <el-dialog-backdrop class="fixed inset-0 bg-gray-900/50 transition-opacity data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in"></el-dialog-backdrop>
+
+                        <div tabindex="0" class="flex min-h-full items-end justify-center p-4 text-center focus:outline-none sm:items-center sm:p-0">
+                        <el-dialog-panel class="relative transform overflow-hidden rounded-lg bg-gray-800 text-left shadow-xl outline -outline-offset-1 outline-white/10 transition-all data-closed:translate-y-4 data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in sm:my-8 sm:w-full sm:max-w-lg data-closed:sm:translate-y-0 data-closed:sm:scale-95">
+                            <div class="bg-gray-800 px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                            <div class="sm:flex sm:items-start">
+                                <div class="mx-auto flex size-12 shrink-0 items-center justify-center rounded-full bg-red-500/10 sm:mx-0 sm:size-10">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 text-red-400">
+                                    <path d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                </div>
+                                <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                                <h3 id="dialog-title" class="text-base font-semibold text-white">Deactivate account</h3>
+                                <div class="mt-2">
+                                    <p class="text-sm text-gray-400">Are you sure you want to deactivate your account? All of your data will be permanently removed. This action cannot be undone.</p>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="bg-gray-700/25 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+                            <button type="button" command="close" commandfor="dialog" class="inline-flex w-full justify-center rounded-md bg-red-500 px-3 py-2 text-sm font-semibold text-white hover:bg-red-400 sm:ml-3 sm:w-auto">Deactivate</button>
+                            <button type="button" command="close" commandfor="dialog" class="mt-3 inline-flex w-full justify-center rounded-md bg-white/10 px-3 py-2 text-sm font-semibold text-white inset-ring inset-ring-white/5 hover:bg-white/20 sm:mt-0 sm:w-auto">Cancel</button>
+                            </div>
+                        </el-dialog-panel>
+                        </div>
+                    </dialog> -->
+
+
+
+                <!-- Project 2 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition-transform hover:scale-[1.02]">
+                    <div class="h-48 overflow-hidden">
+                        <img src="/assets/projects/PRIMAC.jpg" alt="Project 2" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">AC VRF System for Hospital with Commercial Space</h3>
+                        <p class="text-gray-600 mb-4">
+                            Supply and Delivery of energy-efficient Variable Refrigerant Flow (VRF)
+                            air conditioning system designed to provide reliable cooling 
+                            for both hospital and commercial facility operations.
+                        </p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i data-feather="calendar" class="mr-1 w-4 h-4"></i>
+                            <span>November 2024 - On-Going</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition-transform hover:scale-[1.02]">
+                    <div class="h-48 overflow-hidden">
+                        <img src="/assets/projects/Residential.jpg" alt="Project 3" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Residential Cooling System Design,Supply and Installation</h3>
+                        <p class="text-gray-600 mb-4">Design, Supply and installation of a air conditioning system to meet the 
+                            specific cooling requirements of a two-storey residential property, ensuring energy efficiency and occupant comfort.</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i data-feather="calendar" class="mr-1 w-4 h-4"></i>
+                            <span>January 2025 - October 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition-transform hover:scale-[1.02]">
+                    <div class="h-48 overflow-hidden">
+                        <img src="/assets/projects/Documentation.png" alt="Project 3" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Documentation Management</h3>
+                        <p class="text-gray-600 mb-4">Organized and maintained project files across all disciplines using Google Drive as per scope requirements.</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i data-feather="calendar" class="mr-1 w-4 h-4"></i>
+                            <span>...</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition-transform hover:scale-[1.02]">
+                    <div class="h-48 overflow-hidden">
+                        <img src="/assets/projects/sg333.jpg" alt="Project 3" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">14ft EMI Shelter</h3>
+                        <p class="text-gray-600 mb-4">Fabrication and completion of a 14ft EMI-protected shelter for deployment at a Singaporean airport.</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i data-feather="calendar" class="mr-1 w-4 h-4"></i>
+                            <span>March 2018 - September 2018</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition-transform hover:scale-[1.02]">
+                    <div class="h-48 overflow-hidden">
+                        <img src="/assets/projects/truck sg2.jpg" alt="Project 3" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">F550 Truck Cargo</h3>
+                        <p class="text-gray-600 mb-4">Built a lightweight, durable shelter mounted on an F550 truck for client medical operations.</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i data-feather="calendar" class="mr-1 w-4 h-4"></i>
+                            <span>June 2018 - January 2019</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8 flex items-center">
+                <i data-feather="tool" class="mr-2"></i> Virtual Assistance Services
+            </h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                        <i data-feather="file-text" class="text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Document Management</h3>
+                    <p class="text-gray-600">Organize and maintain emails, documents, blueprints, and permits digitally.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                        <i data-feather="trello" class="text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Project Coordination</h3>
+                    <p class="text-gray-600">Manage construction schedules, deliveries, subcontractor communications, and progress tracking.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                        <i data-feather="book-open" class="text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Cost Estimation and Takeoffs</h3>
+                    <p class="text-gray-600">Prepare detailed cost estimates and material takeoffs for construction projects.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                        <i data-feather="dollar-sign" class="text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Payment Tracking</h3>
+                    <p class="text-gray-600">Keep finances organized by tracking invoices, billings to maintain accurate and transparent project budgets.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="mb-16">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2 p-8 md:p-12 bg-gray-900 text-white">
+                        <h2 class="text-3xl font-bold mb-6">Get In Touch</h2>
+                        <p class="text-gray-300 mb-8">Ready to streamline your construction projects with professional virtual assistance? Let's discuss how I can help.</p>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <i data-feather="mail" class="mr-4 text-blue-400 mt-1"></i>
+                                <div>
+                                    <h4 class="font-medium">Email</h4>
+                                    <p class="text-gray-400">j.david.cva@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i data-feather="phone" class="mr-4 text-blue-400 mt-1"></i>
+                                <div>
+                                    <h4 class="font-medium">Whatsapp</h4>
+                                    <p class="text-gray-400">+63 976-026-6561</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i data-feather="map-pin" class="mr-4 text-blue-400 mt-1"></i>
+                                <div>
+                                    <h4 class="font-medium">Location</h4>
+                                    <p class="text-gray-400">Based in Philippines, serving clients worldwide</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 p-8 md:p-12">
+
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdAKWtMGX-9vjAFvpgB81Ko6N76L9q0E6HArcG3G3tNkVZV2w/viewform?embedded=true" 
+                        width="100%" 
+                        height="600" 
+                        frameborder="0" 
+                        marginheight="0" 
+                        marginwidth="0">Loading…
+                    </iframe>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+           
+    <style>
+        footer {
+          background: #111827;
+          color: white;
+          padding: 2rem 1rem;
+          text-align: center;
+        }
+        .footer-content {
+          max-width: 1200px;
+          margin: 0 auto;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .footer-logo {
+          display: flex;
+          align-items: center;
+          margin-bottom: 1.5rem;
+          font-weight: bold;
+          font-size: 1.25rem;
+        }
+        .footer-logo i {
+          color: #3b82f6;
+          margin-right: 0.5rem;
+        }
+        .footer-links {
+          display: flex;
+          gap: 1.5rem;
+          margin-bottom: 1.5rem;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+        .footer-links a {
+          color: #d1d5db;
+          text-decoration: none;
+          transition: color 0.2s;
+          display: flex;
+          align-items: center;
+        }
+        .footer-links a:hover {
+          color: #3b82f6;
+        }
+        .footer-links i {
+          margin-right: 0.5rem;
+          width: 16px;
+          height: 16px;
+        }
+        .social-links {
+          display: flex;
+          gap: 1rem;
+          margin-bottom: 2rem;
+        }
+        .social-links a {
+          color: #d1d5db;
+          transition: color 0.2s;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 36px;
+          height: 36px;
+          border-radius: 50%;
+          background: rgba(255,255,255,0.1);
+        }
+        .social-links a:hover {
+          color: white;
+          background: #3b82f6;
+        }
+        .copyright {
+          color: #9ca3af;
+          font-size: 0.875rem;
+          margin-top: 1rem;
+          border-top: 1px solid rgba(255,255,255,0.1);
+          padding-top: 1.5rem;
+          width: 100%;
+        }
+    </style>
+    
+    
+      <!-- Footer Section -->
+      <footer>
+        <div class="footer-content">
+          <div class="footer-logo">
+            <i data-feather="cpu"></i>
+            Joseph David
+          </div>
+          
+          <div class="footer-links">
+            <a href="#about"><i data-feather="user"></i> About</a>
+            <a href="#projects"><i data-feather="grid"></i> Projects</a>
+            <a href="#services"><i data-feather="tool"></i> Services</a>
+            <a href="#contact"><i data-feather="mail"></i> Contact</a>
+          </div>
+          
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/josephldavid/" aria-label="LinkedIn"><i data-feather="linkedin"></i></a>
+            <!-- <a href="#" aria-label="Twitter"><i data-feather="twitter"></i></a>
+            <a href="#" aria-label="GitHub"><i data-feather="github"></i></a>
+            <a href="#" aria-label="Instagram"><i data-feather="instagram"></i></a> -->
+          </div>
+        </div>
+      </footer>
+
+
+    <custom-footer></custom-footer>
+    <script src="components/navbar.js"></script>
+    <!-- <script src="components/footer.js"></script> -->
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+        VANTA.NET({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x3b82f6,
+            backgroundColor: 0x111827,
+            points: 12.00,
+            maxDistance: 22.00,
+            spacing: 18.00
+        });
+    </script>
+
+</body>
+
+</html>

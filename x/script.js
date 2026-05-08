@@ -28,30 +28,12 @@
    ============================================================ */
 const projects = [
   {
-    title:  "Commercial Projects",
+    title:  "Cable Landing Station — TELCO Data Center",
+    date:   "March 2025 · Ongoing",
     tag:    "Mechanical · Data Center",
-    desc:   "Supply and installation of VRF/VRV system, DX type, Precision Air-Conditioning Units, DC Rectifiers, Data Racks, and ensuring reliable climate control and occupant comfort.",
+    desc:   "Supply and installation of Precision Air-Conditioning Units, DC Rectifiers, Data Racks, and a full Data Center Infrastructure Management (DCIM) system supporting mission-critical telecommunications operations.",
     images: [
-      "/assets/projects/commercial/DCLU.jpg",
-      "/assets/projects/commercial/PRIMAC.jpg" ,
-      "/assets/projects/commercial/proj bpo.jpg" ,
-      "/assets/projects/commercial/proj electr 2.png" ,
-      "/assets/projects/commercial/proj electr 3.png" ,
-      "/assets/projects/commercial/proj electr.png" ,
-      "/assets/projects/commercial/proj gov.jpg", 
-      "/assets/projects/commercial/proj gov2.png",
-      "/assets/projects/commercial/proj hotel 2.png" ,
-      "/assets/projects/commercial/proj hotel.png" ,
-      "/assets/projects/commercial/proj pacu 2.png" ,
-      "/assets/projects/commercial/proj pacu 3.png" ,
-      "/assets/projects/commercial/proj pacu.png" ,
-      "/assets/projects/commercial/proj repair.png" ,
-      "/assets/projects/commercial/proj repairs.png" ,
-      "/assets/projects/commercial/proj school.png" ,
-      "/assets/projects/commercial/proj warehouse.png" ,
-      "/assets/projects/commercial/proj warehouse2.png" ,
-      "/assets/projects/commercial/Proj warehouse3.jpg" ,
-      "/assets/projects/commercial/Projects - church.png",
+      "https://josephdavidcva.netlify.app/assets/projects/DCLU.jpg",
       /* Add more photos below — example:
       "assets/projects/DCLU-2.jpg",
       "assets/projects/DCLU-3.jpg",
@@ -59,70 +41,53 @@ const projects = [
     ]
   },
   {
-    title:  "Awards and Clients meeting",
-    tag:    "HVAC · Engineering",
-    desc:   "Trusted by leading clients across commercial and industrial sectors,we deliver reliable HVAC solutions with quality workmanship and on-time project completion.",
+    title:  "VRF System — Hospital & Commercial Complex",
+    date:   "November 2024 · Ongoing",
+    tag:    "HVAC · VRF Engineering",
+    desc:   "Supply and delivery of an energy-efficient Variable Refrigerant Flow (VRF) air conditioning system for a dual-use hospital and commercial facility, ensuring reliable climate control and occupant comfort.",
     images: [
-      "assets/projects/client and award/award 2.JPG", 
-      "assets/projects/client and award/award.JPG", 
-      "assets/projects/client and award/award 3.JPG", 
-      "assets/projects/client and award/Client meeting 1.png", 
-      "assets/projects/client and award/Client meeting 2.png", 
-      "assets/projects/client and award/Client meeting 3.png", 
-      "assets/projects/client and award/Client meeting 4.png", 
-      "assets/projects/client and award/client meeting 5.png", 
-      "assets/projects/client and award/client meeting 6.png", 
+      "https://josephdavidcva.netlify.app/assets/projects/PRIMAC.jpg",
       /* Add more photos here */
     ]
   },
   {
-    title:  "Residential HVAC system",
+    title:  "Residential Cooling System — Two-Storey Property",
+    date:   "January 2025 – October 2025",
     tag:    "Mechanical · Residential",
-    desc:   "Full-scope design, supply, and installation of a cooling and ventilation for residential space, tailored to site-specific requirements with a focus on energy efficiency and long-term occupant comfort.",
+    desc:   "Full-scope design, supply, and installation of a cooling system for a two-storey residence, tailored to site-specific requirements with a focus on energy efficiency and long-term occupant comfort.",
     images: [
-      "/assets/projects/residential/Residential.jpg",
-      "/assets/projects/residential/proj residential.png",
-      "/assets/projects/residential/proj residential 2.png",
+      "https://josephdavidcva.netlify.app/assets/projects/Residential.jpg",
       /* Add more photos here */
     ]
   },
   {
-    title:  "Takeoff Estimation - HVAC",
-    tag:    "Takeoff · Estimation ",
-    desc:   "Prepared a detailed quantity takeoffs for various mechanical works/HVAC",
+    title:  "Project Schedule — 2-Car Garage ADU Conversion",
+    date:   "September 2025",
+    tag:    "CVA · Scheduling",
+    desc:   "Prepared a detailed Gantt chart for a garage-to-ADU conversion project, enabling efficient planning and tracking of all construction phases from permitting through final inspection.",
     images: [
-      "/assets/projects/Takeoff/takeoff 1.png",
-      "/assets/projects/Takeoff/takeoff 2.png",
-      "/assets/projects/Takeoff/takeoff 3.png",
-      "/assets/projects/Takeoff/takeoff 4.png",
-      "/assets/projects/Takeoff/takeoff 5.png",
-      "/assets/projects/Takeoff/takeoff 6.png",
-      "/assets/projects/Takeoff/takeoff 7.png",
-      "/assets/projects/Takeoff/takeoff 8.png",
+      "https://josephdavidcva.netlify.app/assets/projects/schedulers.png",
       /* Add more photos here */
     ]
   },
   {
-    title:  "EMI-Protected Shelter,Trucks and Custom built Body - ST Engineering",
+    title:  "14ft EMI-Protected Shelter — Singapore Airport",
+    date:   "March 2018 – September 2018",
     tag:    "Fabrication · Singapore",
-    desc:   "Fabrication and completion of a electromagnetic interference (EMI) protected shelter for deployment at various location in Singapore, meeting stringent aviation-grade specifications.",
+    desc:   "Fabrication and completion of a 14ft electromagnetic interference (EMI) protected shelter for deployment at a Singaporean international airport, meeting stringent aviation-grade specifications.",
     images: [
-      "/assets/projects/SG projects/sg333.jpg",
-      "/assets/projects/SG projects/cs shelter.jpg",
-      "/assets/projects/SG projects/truck sg.jpg",
-      "/assets/projects/SG projects/truck sg2.jpg",           
+      "https://josephdavidcva.netlify.app/assets/projects/sg333.jpg",
+      "https://josephdavidcva.netlify.app/assets/projects/truck sg2.jpg",
       /* Add more photos here */
     ]
   },
   {
     title:  "Multi-Discipline Documentation Management",
+    date:   "Ongoing",
     tag:    "CVA · Documentation",
-    desc:   "Organized and maintained project files,schedules, reports across all engineering disciplines using Google Drive with structured naming and version control protocols.",
+    desc:   "Organized and maintained project files across all engineering disciplines using Google Drive, following structured naming conventions and version control protocols aligned with scope requirements.",
     images: [
-      "/assets/projects/documents/Documentation.png",
-      "/assets/projects/documents/proj docs.png",
-      "/assets/projects/documents/schedulers.png",
-      
+      "https://josephdavidcva.netlify.app/assets/projects/Documentation.png",
       /* Add more photos here */
     ]
   }

@@ -27,9 +27,9 @@
    ============================================================ */
 :root {
   /* --- Brand Colors --- */
-  --gold:         #2563eb;   /* Main accent gold — used for highlights */
-  --gold-light:   #60a5fa;   /* Lighter gold for hover effects */
-  --gold-dark:    #1d4ed8;   /* Darker gold for pressed/active states */
+  --gold:         #b8914a;   /* Main accent gold — used for highlights */
+  --gold-light:   #d4a962;   /* Lighter gold for hover effects */
+  --gold-dark:    #8c6a2f;   /* Darker gold for pressed/active states */
 
   /* --- Text Colors --- */
   --ink:          #0e0e0e;   /* Primary text — nearly black */
@@ -38,9 +38,9 @@
   --ink-subtle:   #8a8a8a;   /* Labels, captions — lighter gray */
 
   /* --- Background Colors --- */
-  --cream:        #f8fafc;   /* Main page background */
-  --cream-2:      #f1f5f9;   /* Hero right panel, education cards */
-  --cream-3:      #e2e8f0;   /* Borders, skill tag backgrounds */
+  --cream:        #f9f6f0;   /* Main page background */
+  --cream-2:      #f2ede4;   /* Hero right panel, education cards */
+  --cream-3:      #e8e0d0;   /* Borders, skill tag backgrounds */
   --white:        #ffffff;   /* Cards, form backgrounds */
 
   /* --- Borders --- */
